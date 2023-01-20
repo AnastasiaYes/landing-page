@@ -1,0 +1,13 @@
+@media screen and (max-width: 576px) {
+    .owl-dots {
+        border-bottom: 1px solid #A7A7A7;
+        padding-bottom: 75px;
+    }
+    .owl-stage {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .plain_text{
+        color: red;
+    }
+}
