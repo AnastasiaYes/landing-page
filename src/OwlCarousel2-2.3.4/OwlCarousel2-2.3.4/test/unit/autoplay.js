@@ -8,7 +8,7 @@ function FakeClock() {
 	this.tick = function(duration) {
 		value += duration;
 	};
-	// TODO: This is broken and has to be fixed in the near future
+	// TODO: This is broken and has to be fixed in the near footure
 	this.Date = function() {
 		this.getTime = function() {
 			return value;
