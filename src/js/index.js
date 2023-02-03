@@ -4,6 +4,8 @@ import * as $ from 'jquery'
 import 'owl.carousel'
 import 'owl.carousel/dist/assets/owl.theme.default.min.css'
 import 'owl.carousel/dist/assets/owl.carousel.min.css'
+import '../videotube/videotube.min.css'
+import '../videotube/videotube.min.js'
 
 
 const burgerHeader = document.querySelector('.burger_header');
