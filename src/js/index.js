@@ -61,12 +61,38 @@ const dropDownList = document.querySelectorAll('.drop-down_list');
 for (let i = 0; i < dropDownList.length; i++) {
     dropDownList[i].addEventListener('click', function () {
             dropDownList[i].classList.toggle('active');
-            if (dropDownList[i].classList.contains('active')) {
-                const imgDropDownList = document.querySelectorAll('.drop-down_list img')
-                for (let i = 0; i < imgDropDownList.length; i++) {
-                    imgDropDownList[i].style.transform = 'rotate(180deg)'
-                }
-            }
+
         }
     )
 }
+
+const btnStandart = document.querySelector('.btn_standart');
+const btnPremium = document.querySelector('.btn_premium');
+const btnMonthly = document.querySelector('.btn_monthly');
+const btnYearly = document.querySelector('.btn_yearly');
+
+btnYearly.addEventListener('click', function() {
+    if (btnMonthly.classList.contains('btn-active')) {
+        btnMonthly.classList.remove('btn-active');
+        btnYearly.classList.add('btn-active')
+        btnStandart.innerText = '39';
+        btnPremium.innerText = '80';
+    }
+})
+
+btnMonthly.addEventListener('click', function() {
+    if (btnYearly.classList.contains('btn-active')) {
+        btnYearly.classList.remove('btn-active');
+        btnMonthly.classList.add('btn-active')
+        btnStandart.innerText = '49';
+        btnPremium.innerText = '99';
+    }
+})
+
+const input = document.querySelectorAll()
+
+
+// const regexp = /bg/;
+// const result = элемент в кот найти.match(regexp);
+//
+const phone = /^\+?\d{7,11}$/;
