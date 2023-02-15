@@ -50,21 +50,28 @@
         <div class="first_block_work_animation">
             <span class="circle"></span>
             <span class="job">JOB</span>
-            <span class="first_block_one_line"></span>
+            <span class="first_block_one_line_container">
+                <span class="first_block_one_line"></span>
+            </span>
             <span class="to">TO</span>
-            <span class="first_block_two_line"></span>
+            <span class="first_block_two_line_container">
+                <span class="first_block_two_line"></span>
+            </span>
             <div class="be_container">
                 <span class="be">BE</span>
                 <span class="be_circle"></span>
             </div>
-            <span class="first_block_three_line"></span>
-            <div class="done_container" >
+            <span class="first_block_three_line_container">
+                <span class="first_block_three_line"></span>
+            </span>
+            <div class="done_container">
                 <span class="done">DONE</span>
                 <span class="done_circle"></span>
             </div>
 
             <div class="intro_video">
-                <button class="but_play but_intro_video"><a href="https://www.youtube.com/watch?v=ajBNi_-x7ZI" class="tube"><img src="img/play.png"></a></button>
+                <button class="but_play but_intro_video"><a href="https://www.youtube.com/watch?v=ajBNi_-x7ZI"
+                                                            class="tube"><img src="img/play.png"></a></button>
                 <span class="text_intro_video">Watch our intro video</span>
             </div>
 
@@ -95,22 +102,22 @@
     <div class="block_of_indicators_container">
         <div class="indicator">
             <img class="indicator_icon" src="img/indicators/Number_of_Reviews_Sites.png">
-            <h2><span class="indicator_number">150</span>K</h2>
+            <h2><span class="indicator_number" data-num="150">0</span>K</h2>
             <span>Number of Reviews </span>
         </div>
         <div class="indicator">
             <img class="indicator_icon" src="img/indicators/Number_of_Vendors.png">
-            <h2><span class="indicator_number">12</span>K+</h2>
+            <h2><span class="indicator_number" data-num="12">0</span>K+</h2>
             <span>Number of Vendors</span>
         </div>
         <div class="indicator">
             <img class="indicator_icon" src="img/indicators/Amount_of_Software.png">
-            <h2><span class="indicator_number">370</span></h2>
+            <h2><span class="indicator_number" data-num="370">0</span></h2>
             <span>Amount of Software</span>
         </div>
         <div class="indicator">
             <img class="indicator_icon" src="img/indicators/Number_of_Reviews.png">
-            <h2><span class="indicator_number">180</span>+</h2>
+            <h2><span class="indicator_number" data-num="180">0</span>+</h2>
             <span>Number of Reviews Sites</span>
         </div>
     </div>
@@ -151,10 +158,12 @@
                         </div>
                     </div>
 
+                    <span class="right_line"></span>
+                    <span class="bottom_line"></span>
+
                     <div>
                         <div class="img_how_work_container create_value">
                             <img class="img_tag_cloud" src="img/how_does_it_work/create_value.png" alt="">
-                            <span class="bottom_line"></span>
                         </div>
                     </div>
 
@@ -171,14 +180,14 @@
                         <div class="img_how_work_container tag_cloud">
                             <img class="img_tag_cloud" src="img/how_does_it_work/tag_cloud.png" alt="">
                         </div>
-                        <span class="right_line"></span>
                     </div>
+
+                    <span class="left_line"></span>
 
                     <div>
                         <div class="img_how_work_container understand_the_contex">
                             <img class="img_collecting_feedback" src="img/how_does_it_work/understand_the_contex.png"
                                  alt="">
-                            <span class="left_line"></span>
                         </div>
                     </div>
 
@@ -228,7 +237,9 @@
             </div>
 
             <div class="how_work_one_element">
-                <div class="img_how_work_container create_value"><img src="img/how_does_it_work/create_value.png"></div>
+                <div class="img_how_work_container create_value">
+                    <img src="img/how_does_it_work/create_value.png">
+                </div>
                 <div>
                     <span class="heading_how_work">Create value</span>
                     <p class="text_how_work">Link what customers do and what they get out of it</p>
@@ -242,7 +253,8 @@
             diam a semper non amet malesuada scelerisque vel eget. </p>
 
         <div class="how_work_play">
-            <button class="but_play"><a href=href="https://www.youtube.com/watch?v=ajBNi_-x7ZI" class="tube"><img src="img/play.png"></a></button>
+            <button class="but_play"><a href=href="https://www.youtube.com/watch?v=ajBNi_-x7ZI" class="tube"><img
+                    src="img/play.png"></a></button>
             <span class="text_how_work_play">Watch the video</span>
         </div>
     </div>
@@ -267,10 +279,109 @@
         </div>
 
         <div class="block_with_text_left">
-            <div>
-                <img src="img/text_block/understand_the_essence.png" alt="">
+            <div class="tag_cloud_container">
+                <!--                <img src="img/text_block/understand_the_essence.png" alt="">-->
+
+                <div class="tag_cloud">
+                    <div class="one_word_container tag_inactive">
+                        <a href="#" class="one_word">Understand</a>
+                    </div>
+                    <div class="two_word_container tag_inactive">
+                        <span>
+                            <a href="#" class="two_word">the</a>
+                        </span>
+                        <span>
+                            <a href="#" class="two_word">essence</a>
+                        </span>
+                    </div>
+                    <div class="three_word_container tag_inactive">
+                        <span>
+                            <a href="#" class="three_word">reviews</a>
+                        </span>
+                        <span>
+                            <a href="#" class="three_word">make</a>
+                        </span>
+                    </div>
+                    <div class="four_word_container tag_inactive">
+                        <span>
+                            <a href="#" class="four_word">data</a>
+                        </span>
+                        <span>
+                            <a href="#" class="four_word">product</a>
+                        </span>
+                        <span>
+                            <a href="#" class="four_word">software</a>
+                        </span>
+                        <span>
+                            <a href="#" class="four_word">process</a>
+                        </span>
+                        <span>
+                            <a href="#" class="four_word">users</a>
+                        </span>
+                    </div>
+                    <div class="five_word_container tag_inactive">
+                        <span>
+                            <a href="#" class="five_word">soft</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">structure</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">new</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">process</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">way</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">constantly</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">JTBD</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">never-ending</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">cons</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">formulating</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">well</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">usage</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">picture</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">job</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">immediately</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">structured</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">collecting</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">words</a>
+                        </span>
+                        <span>
+                            <a href="#" class="five_word">scenarios</a>
+                        </span>
+                    </div>
+                </div>
+
             </div>
-            <div class="text_left">
+            <div class="text_left with_tag_cloud">
                 <h1>Understand the Essence</h1>
                 <p>You need to understand what customers are saying, and the easiest way is to make a
                     word cloud. Take all the pluses from the reviews from websites, combine them, make a
@@ -480,66 +591,90 @@
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">How to use APP?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">How to use APP?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+                        <p class="drop-down_text">
+                            Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                            publishing industries
+                            for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in
+                            the
+                            graphic, print, and publishing industries
+                            for previewing layouts and visual mockups
+                        </p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the
-                        graphic, print, and publishing industries
-                        for previewing layouts and visual mockups</p>
                 </div>
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">Where do you collect feedback from?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">Where do you collect feedback from?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+                        <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                            and
+                            publishing industries
+                            for previewing layouts and visual mockups.</p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups.</p>
                 </div>
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">How quickly are the reviews collected?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">How quickly are the reviews collected?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+                        <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                            and
+                            publishing industries
+                            for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in
+                            the
+                            graphic, print, and publishing industries
+                            for previewing layouts and visual mockups</p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the
-                        graphic, print, and publishing industries
-                        for previewing layouts and visual mockups</p>
                 </div>
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">“How many competitors can you analyze?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">“How many competitors can you analyze?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+
+                        <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                            and
+                            publishing industries
+                            for previewing layouts and visual mockups.</p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups.</p>
                 </div>
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">What is JTBD?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">What is JTBD?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+
+                        <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                            and
+                            publishing industries
+                            for previewing layouts and visual mockups.</p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups.</p>
                 </div>
 
                 <div class="drop-down_list_container">
                     <div class="drop-down_list">
-                        <span class="drop-down_list_head">How do you build value?</span>
-                        <img src="img/drop-down_list.png" alt="">
+                        <div class="drop-down_list__title">
+                            <span class="drop-down_list_head">How do you build value?</span>
+                            <img src="img/drop-down_list.png" alt="">
+                        </div>
+
+                        <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                            and
+                            publishing industries
+                            for previewing layouts and visual mockups.</p>
                     </div>
-                    <p class="drop-down_text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                        publishing industries
-                        for previewing layouts and visual mockups.</p>
                 </div>
 
             </div>
@@ -597,19 +732,20 @@
                 <div class="sender_information_container">
 
                     <div class="form_input">
-                        <input type="text" name="First name" placeholder="First name" required tabindex>
-                        <input type="text" name="Last name" placeholder="Last name" required tabindex>
+                        <input type="text" name="name" placeholder="First name" required tabindex>
+                        <input type="text" name="last_name" placeholder="Last name" required tabindex>
                     </div>
 
                     <div class="form_input">
-                        <input type="text" name="Email adress" placeholder="Email adress" required tabindex>
-                        <input type="text" name="Phone number" placeholder="Phone number" required tabindex>
+                        <input type="text" name="email" placeholder="Email adress" required tabindex>
+                        <input class="raz" type="number" name="phone_number" placeholder="Phone number" required
+                               tabindex>
                     </div>
 
                 </div>
 
                 <div class="message_container">
-                    <textarea type="text" name="Message" placeholder="Message" required tabindex></textarea>
+                    <textarea type="text" name="message" placeholder="Message" required tabindex></textarea>
                 </div>
 
                 <div class="foot_but_container">

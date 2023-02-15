@@ -2,6 +2,7 @@
     .button_gradient {
         padding: 12px 35px;
     }
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -35,36 +36,54 @@
     .frequently_asked_questions {
         justify-content: space-around;
     }
+
     .job {
         left: 295px;
     }
+
     .to {
         left: 190px;
     }
+
     .done_container {
         left: 50px;
     }
-    .first_block_three_line {
+
+    .first_block_three_line_container {
         transform: rotate(-25deg);
-        width: 244px;
         left: 187px;
     }
-    .first_block_one_line {
-        width: 94px;
+
+    .line_three_active {
+        width: 244px;
+    }
+
+    .first_block_one_line_container {
         left: 224px;
+    }
+
+    .line_one_active {
+        width: 94px;
     }
 }
 
 @media screen and (max-width: 1060px) {
-    .first_block_three_line {
+    .first_block_three_line_container {
         transform: rotate(-20deg);
-        width: 191px;
         left: 183px;
         top: 274px;
     }
-    .first_block_two_line {
-        width: 135px;
+
+    .line_three_active {
+        width: 191px;
+    }
+
+    .first_block_two_line_container {
         left: 237px;
+    }
+
+    .line_two_active {
+        width: 135px;
     }
 
 }
@@ -96,12 +115,14 @@
         display: block;
         line-height: 35px;
     }
+
     .navigation a {
         display: block;
         width: 100%;
         padding: 0 10px;
     }
-    .button_login{
+
+    .button_login {
         padding: 0 10px;
         width: 100%;
         text-align: start;
@@ -176,27 +197,43 @@
     .button_sign_up {
         position: relative;
     }
+
     .job {
         left: 246px;
     }
+
     .to {
         left: 153px;
     }
+
     .done_container {
         left: 10px;
     }
-    .first_block_one_line {
-        width: 85px;
+
+    .first_block_one_line_container {
         left: 184px;
     }
-    .first_block_two_line {
-        width: 126px;
+
+    .line_one_active {
+        width: 85px;
+    }
+
+    .first_block_two_line_container {
         left: 202px;
     }
-    .first_block_three_line {
-        width: 187px;
+
+    .line_two_active {
+        width: 126px;
+    }
+
+    .first_block_three_line_container {
         left: 143px;
     }
+
+    .line_three_active {
+        width: 187px;
+    }
+
     .intro_video {
         left: 235px;
     }
@@ -280,47 +317,58 @@
     .foot_block > div {
         margin-bottom: 50px;
     }
+
     .circle_center {
         width: 120px;
         height: 120px;
     }
+
     .circle_center_left_top, .circle_center_left_botton, .circle_center_right_top, .circle_center_right_botton {
         display: none;
     }
-    .how_work_right{
+
+    .how_work_right {
         margin-left: 10px;
     }
-    .how_work_left{
+
+    .how_work_left {
         margin-right: 10px;
     }
+
     .img_how_work_container {
         width: 110px;
         height: 110px;
     }
-    .top_line, .bottom_line {
-        left: 106px;
+
+    .top_line {
+        left: 109px;
     }
-    .right_line, .left_line {
-        height: 247px;
-        top: 106px;
+
+    .bottom_line {
+        right: -254px;
     }
 
 }
+
 @media screen and (max-width: 850px) {
     h1 {
         line-height: 40px;
         font-size: 30px;
     }
-    .first_block{
+
+    .first_block {
         width: 40%;
     }
+
     .first_block_work_animation {
         width: 60%;
     }
-    .first_block_two_line {
+
+    .line_two_active {
         width: 140px;
     }
-    .first_block_three_line {
+
+    .line_three_active {
         width: 202px;
     }
 
@@ -352,6 +400,37 @@
     .button {
         width: 300px;
     }
+
+    .bottom_line {
+        right: -166px;
+    }
+
+    .bottom_line_animation {
+        width: 210px;
+        animation-name: bottom_line_animation;
+    }
+
+    @keyframes bottom_line_animation {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 210px;
+        }
+    }
+    .top_line_animation {
+        width: 210px;
+        animation-name: top_line_animation;
+    }
+
+    @keyframes top_line_animation {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 210px;
+        }
+    }
 }
 
 @media screen and (max-width: 755px) {
@@ -362,14 +441,17 @@
     .drop-down_list_container {
         width: 100%;
     }
+
     .first_block_work_animation {
         display: none;
     }
+
     .first_block {
         width: 90%;
         margin: auto;
         text-align: center;
     }
+
     .heading {
         margin: 130px 0 40px 0;
     }
@@ -430,26 +512,33 @@
     .logo_container img {
         width: 200px;
     }
+
     .button_gradient {
         padding: 10px 23px;
     }
+
     .burger_header {
         height: 35px;
         width: 35px;
     }
-    .burger_header::after, .burger_header::before,  .burger_header span{
+
+    .burger_header::after, .burger_header::before, .burger_header span {
         width: 35px;
         right: 10px;
     }
+
     .burger_header::after {
         top: 5px;
     }
+
     .burger_header span {
         top: 20px;
     }
+
     .burger_header::before {
         top: 35px;
     }
+
     .burger_header.is-active::before {
         top: 20px;
     }
@@ -457,9 +546,11 @@
     .burger_header.is-active::after {
         top: 15px;
     }
+
     .navigation_container {
         right: 20px;
     }
+
     .owl-dots {
         border-bottom: 1px solid #A7A7A7;
         padding-bottom: 75px;
@@ -529,26 +620,33 @@
     .logo_container img {
         width: 150px;
     }
+
     .button_gradient {
         padding: 5px 17px;
     }
+
     .burger_header {
         height: 25px;
         width: 25px;
     }
-    .burger_header::after, .burger_header::before,  .burger_header span{
+
+    .burger_header::after, .burger_header::before, .burger_header span {
         width: 25px;
         right: 10px;
     }
+
     .burger_header::after {
         top: 0;
     }
+
     .burger_header span {
         top: 12px;
     }
+
     .burger_header::before {
         top: 24px;
     }
+
     .burger_header.is-active::before {
         top: 15px;
     }
@@ -556,6 +654,7 @@
     .burger_header.is-active::after {
         top: 10px;
     }
+
     .block_pricing_plan {
         width: 350px;
     }
