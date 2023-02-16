@@ -179,7 +179,7 @@ const patterns = {
     name: /^[а-яёА-ЯЁ\-]{2,30}|[a-zA-Z\-]{2,30}$/,
     last_name: /^[а-яёА-ЯЁ\-]{2,30}|[a-zA-Z\-]{2,30}$/,
     email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
-    message: /.+ {20,}/
+    message: /(.+){20,}/
 }
 
 function validate (field, regex) {
@@ -195,8 +195,7 @@ inputs.forEach((input) => {
         validate(e.target, patterns[e.target.attributes.name.value]);
     })
 })
-textarea.forEach((textarea) => {
     textarea.addEventListener('keyup', function (e) {
-        validate(e.target, patterns[e.target.attributes.name.value]);
-    })
+    validate(e.target, patterns[e.target.attributes.name.value]);
+    console.log(e.target.attributes.name.value)
 })

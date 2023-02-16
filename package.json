@@ -12,12 +12,12 @@
     "start": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
-    "http-server": "^14.1.1",
     "jquery": "^3.6.3",
     "normalize.css": "^8.0.1",
     "owl.carousel": "^2.3.4"
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",

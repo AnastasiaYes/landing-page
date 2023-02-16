@@ -482,6 +482,9 @@
     .block_how_work {
         display: none;
     }
+    .with_tag_cloud{
+        width: 100%;
+    }
 
     .how_work_one_element {
         display: flex;
@@ -585,6 +588,12 @@
 }
 
 @media screen and (max-width: 500px) {
+    .block_with_text_right {
+        margin-top: 150px;
+    }
+    .block_with_text_left {
+        margin: 150px 0;
+    }
     .foot_info {
         flex-direction: column;
     }
@@ -668,6 +677,7 @@
         width: 30px;
     }
 
+
     .sender_information_container input {
         padding: 10px 10px 10px 10px
     }
@@ -679,11 +689,6 @@
     .sender_information_container, .message_container {
         margin: 20px 10px 20px 10px;
     }
-
-    .foot_but_container {
-        display: flex;
-    }
-
     .foot_but {
         flex: 1;
     }
@@ -691,6 +696,21 @@
     .foot_but {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .sender_information_container{
+        flex-direction: column;
+    }
+    .form_input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .foot_but_container {
+        margin-right: 0 !important;
+    }
+    .block_pricing_plan {
+        width: 320px;
     }
 }
 

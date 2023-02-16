@@ -698,7 +698,7 @@ nav {
 
 .block_with_text_right {
     display: flex;
-    margin-top: 180px;
+    margin-top: 170px;
 }
 
 .text_right {
@@ -721,14 +721,15 @@ nav {
     display: flex;
     flex-direction: row-reverse;
     margin: 170px 0;
+    overflow: hidden;
 }
 
 .text_left {
     margin-right: 90px;
 }
 
-.with_tag_cloud, .tag_cloud_container {
-    width: 50%;
+.with_tag_cloud{
+    width: 55%;
 
 }
 
@@ -737,6 +738,7 @@ nav {
     height: 488px;
     left: 80px;
     top: 35px;
+    width: 45%;
 }
 
 .one_word_container {
