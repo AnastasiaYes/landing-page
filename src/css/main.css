@@ -3,6 +3,7 @@
 
 html {
     scroll-behavior: smooth;
+    cursor: default;
 }
 
 button {
@@ -266,6 +267,7 @@ nav {
     position: relative;
     top: 335px;
     left: 338px;
+    width: 170px;
 }
 
 .but_intro_video {
@@ -732,6 +734,9 @@ nav {
 
 .tag_cloud_container {
     position: relative;
+    height: 488px;
+    left: 80px;
+    top: 35px;
 }
 
 .one_word_container {
@@ -1424,9 +1429,6 @@ footer input, footer textarea {
     flex-direction: column;
     width: 47%;
 }
-.valid{
-    box-shadow: 0 0 3px green;
-}
 .invalid{
     box-shadow: 0 0 3px red;
 }
@@ -1446,6 +1448,18 @@ footer input, footer textarea {
 
 .form_input input:first-child {
     margin-bottom: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 .foot_but {
