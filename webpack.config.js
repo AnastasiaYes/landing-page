@@ -2,7 +2,8 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const webpack = require("webpack");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     context: path.resolve(__dirname, 'src'), // откуда будет искать
@@ -26,6 +27,7 @@ module.exports = {
         port: 4200
     },
     plugins: [
+        new MiniCssExtractPlugin(),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
@@ -48,7 +50,7 @@ module.exports = {
         rules: [
             {
                 test: /.+\.css$/, //регулярное выражение (если файлы, кот своим расширением соответствую данному правилу, попадаются ему в качестве импорта, то ему нужно использовать (use) различные типы loader)
-                use: ['style-loader', 'css-loader'] // webpack читает с права на лево // loader - когда один loader, use - когда массив loader-ов
+                use: [MiniCssExtractPlugin.loader, 'css-loader'] // webpack читает с права на лево // loader - когда один loader, use - когда массив loader-ов
             },
             {
                 test: /\.(woff|woff2|ttf|eot)$/, // подключение шрифтов
