@@ -482,7 +482,8 @@
     .block_how_work {
         display: none;
     }
-    .with_tag_cloud{
+
+    .with_tag_cloud {
         width: 100%;
     }
 
@@ -591,9 +592,11 @@
     .block_with_text_right {
         margin-top: 150px;
     }
+
     .block_with_text_left {
         margin: 150px 0;
     }
+
     .foot_info {
         flex-direction: column;
     }
@@ -689,6 +692,7 @@
     .sender_information_container, .message_container {
         margin: 20px 10px 20px 10px;
     }
+
     .foot_but {
         flex: 1;
     }
@@ -698,17 +702,21 @@
         margin-right: 10px;
     }
 }
+
 @media screen and (max-width: 380px) {
-    .sender_information_container{
+    .sender_information_container {
         flex-direction: column;
     }
+
     .form_input {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .foot_but_container {
         margin-right: 0 !important;
     }
+
     .block_pricing_plan {
         width: 320px;
     }

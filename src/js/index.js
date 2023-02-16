@@ -16,7 +16,7 @@ burgerHeader.addEventListener('click', function () {
 })
 
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
 
     const oneLine = document.querySelector('.first_block_one_line_container');
     const twoLine = document.querySelector('.first_block_two_line_container');
@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
         threeLine.classList.add('line_three_active');
     }, 3000);
 });
-
 
 
 $('.owl-carousel').owlCarousel({
@@ -77,12 +76,12 @@ function startCount() {
 
 (function () {
     let start = false;
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
 
         let scroll = window.scrollY;
         let scrollBlockIndicatorsContainer = document.querySelector('.block_of_indicators_container').offsetTop;
 
-        if (scroll >= scrollBlockIndicatorsContainer-700 && !start) {
+        if (scroll >= scrollBlockIndicatorsContainer - 700 && !start) {
             start = true;
             startCount();
         }
@@ -105,7 +104,7 @@ const btnPremium = document.querySelector('.btn_premium');
 const btnMonthly = document.querySelector('.btn_monthly');
 const btnYearly = document.querySelector('.btn_yearly');
 
-btnYearly.addEventListener('click', function() {
+btnYearly.addEventListener('click', function () {
     if (btnMonthly.classList.contains('btn-active')) {
         btnMonthly.classList.remove('btn-active');
         btnYearly.classList.add('btn-active')
@@ -114,7 +113,7 @@ btnYearly.addEventListener('click', function() {
     }
 })
 
-btnMonthly.addEventListener('click', function() {
+btnMonthly.addEventListener('click', function () {
     if (btnYearly.classList.contains('btn-active')) {
         btnYearly.classList.remove('btn-active');
         btnMonthly.classList.add('btn-active')
@@ -124,11 +123,7 @@ btnMonthly.addEventListener('click', function() {
 })
 
 
-
-
-
-
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
 
     let scroll = window.scrollY;
     let scrollHowWorks = document.querySelector('#how_it_works').offsetTop;
@@ -138,7 +133,7 @@ window.addEventListener('scroll', function() {
     const rightLineHowWorks = document.querySelector('.img_how_work_wrapper .right_line');
 
 
-    if (scroll >= scrollHowWorks-100) {
+    if (scroll >= scrollHowWorks - 100) {
         topLineHowWorks.classList.add('top_line_animation');
         setTimeout(function () {
             leftLineHowWorks.classList.add('left_line_animation');
@@ -155,7 +150,7 @@ window.addEventListener('scroll', function() {
 
 });
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let blockWithTextContainer = document.querySelector('.block_with_text_container').offsetTop;
     const elTagCloud = document.querySelectorAll('.tag_cloud div');
     let scroll = window.scrollY;
@@ -169,8 +164,6 @@ window.addEventListener('scroll', function() {
 })
 
 
-
-
 const inputs = document.querySelectorAll('footer input')
 const textarea = document.querySelector('textarea')
 
@@ -182,8 +175,8 @@ const patterns = {
     message: /(.+){20,}/
 }
 
-function validate (field, regex) {
-    if(regex.test(field.value)) {
+function validate(field, regex) {
+    if (regex.test(field.value)) {
         field.className = 'valid'
     } else {
         field.className = 'invalid'
@@ -195,7 +188,7 @@ inputs.forEach((input) => {
         validate(e.target, patterns[e.target.attributes.name.value]);
     })
 })
-    textarea.addEventListener('keyup', function (e) {
+textarea.addEventListener('keyup', function (e) {
     validate(e.target, patterns[e.target.attributes.name.value]);
     console.log(e.target.attributes.name.value)
 })
