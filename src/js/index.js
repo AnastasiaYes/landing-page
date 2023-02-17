@@ -15,6 +15,14 @@ burgerHeader.addEventListener('click', function () {
     navigationContainer.classList.toggle('nav_active')
 })
 
+navigationContainer.addEventListener('click', function () {
+    if (navigationContainer.classList.contains('nav_active') && burgerHeader.classList.contains('is-active')) {
+        navigationContainer.classList.remove('nav_active');
+        burgerHeader.classList.remove('is-active');
+    }
+})
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
 

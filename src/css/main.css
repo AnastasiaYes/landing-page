@@ -6,6 +6,10 @@ html {
     cursor: default;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 button {
     border: none;
     background: none;
@@ -110,6 +114,7 @@ nav {
     background-clip: text;
     background-image: linear-gradient(269.27deg, #E35369 -96.43%, #751C82 127.09%);
     font-size: 19px;
+    width: auto;
 }
 
 .button {
